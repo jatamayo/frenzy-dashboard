@@ -1,0 +1,203 @@
+<!--  ************  div No.1 ********************-->
+  <!-- company perfil image -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- <img class="profileImage" src="http://images4.wikia.nocookie.net/__cb2/messaging/images/thumb/e/e5/Avatar4.jpg/150px-Avatar4.jpg" alt="photoProfile" /> -->
+        <div class="profileDivImage show-image">
+          <img class="profileImage" src="img/usuario2.png" alt="perfil" />
+          <input class="update" type="file" value="Update" my-upload name="upload"/>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="profileDivCompaniName profileCompaniName">
+          Nombre de la empresa
+          <h3>Tipo de empresa</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  ************  div No.2 ********************-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <!--  dropdown industry  -->
+      <div class="inline">
+          <select class="profileDropdownMenu">
+            <option value="0" class="profileDropdownMenuOptions">Industria</option>
+            <option value="1" class="profileDropdownMenuOptions">Restaurantes</option>
+            <option value="2" class="profileDropdownMenuOptions">Moda</option>
+            <option value="3" class="profileDropdownMenuOptions">Supermercados</option>
+            <option value="4" class="profileDropdownMenuOptions">Otros</option>
+          </select>
+      </div>
+
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-5">
+      <!--  dropdown category industry  -->
+      <div class="inline">
+          <select class="profileDropdownMenu">
+            <option value="0" class="profileDropdownMenuOptions">Categoria de la industria</option>
+            <option value="1" class="profileDropdownMenuOptions">Restaurantes</option>
+            <option value="2" class="profileDropdownMenuOptions">Moda</option>
+            <option value="3" class="profileDropdownMenuOptions">Supermercados</option>
+            <option value="4" class="profileDropdownMenuOptions">Otros</option>
+          </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--  ************  div No.3 ********************-->
+<div class="container">
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <!--  company size  -->
+        <p class="profileText1">Tamaño de la empresa</p>
+        <p class="profileText2">(Personas)</p>
+    </div>
+      <div class="col-md-0"></div>
+      <!--  staff number  -->
+      <div class="col-md-5">
+        <div class="inline">
+          <div class="inline"><input id="option1" class="profileStaffNumber" type="button" name="name" onclick="staffNumber1()" value="10-20" ></div>
+          <div class="inline"><input id="option2" class="profileStaffNumber" type="button" name="name" onclick="staffNumber2()" value="20-30" ></div>
+          <div class="inline"><input id="option3" class="profileStaffNumber" type="button" name="name" onclick="staffNumber3()" value="30 o mas"></div>
+          <p class="profileSpacerTop">.</p>
+        </div>
+      </div>
+  </div>
+</div>
+<!--  ************  div No.4 ********************-->
+<div class="container">
+  <!--*****  row 1 Div No.4  *****-->
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <!--  nit  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">NIT</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-5">
+      <!--  Business Name  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Razon Social</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+  </div>
+  <!--*****  row 2 Div No.4  *****-->
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <!--  Name  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Nombre</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-5">
+      <!--  Finance Mail  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Correo de Finanzas</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+  </div>
+  <!--*****  row 3 Div No.4  *****-->
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <!--  Name  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Nombre</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-5">
+      <!--  Mail Marketing  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Correo de Mercadeo</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+  </div>
+  <!--*****  row 4 Div No.4  *****-->
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <!--  Office Phone  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Telefono de Oficina</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-5">
+      <!--  Service Phone  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Telefono de Servicio</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+  </div>
+  <!--*****  row 4 Div No.5  *****-->
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <!--  Web Page  -->
+      <div class="inline profileDivInput ">
+        <p class="profileText3">Pagina Web</p><br>
+        <input class="profileInputStyle" type="text" name="name" value="">
+      </div>
+    </div>
+  </div>
+</div>
+<!--  ************  div No.5 ********************-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <!--  admininstrators  -->
+    <div class="col-md-10" style="margin-top:50px;">
+      <span class="profileText4">Administradores</span><span class="glyphicon glyphicon-plus-sign"></span>
+    </div>
+  </div>
+</div>
+<!--  ************  div No.6 ********************-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <!--  usser  -->
+    <div class="col-md-2 profileDiv7LeftFix  profileDivFoother ">
+      <p class="profileText5">USUARIO</p>
+      <p class="profileText6">Usuario 1</p>
+      <p class="profileText6">Usuario 2</p>
+      <p class="profileText6">Usuario 3</p>
+    </div>
+    <!--  name  -->
+    <div class="col-md-2 profileDivFoother profileLefttLine ">
+      <p class="profileText5">NOMBRE</p>
+      <p class="profileText6">Nombre</p>
+    </div>
+    <!--  mail  -->
+    <div class="col-md-2 profileDivFoother profileLefttLine ">
+      <p class="profileText5">CORREO</p>
+      <p class="profileText6">Correo</p>
+    </div>
+    <!--  company role  -->
+    <div class="col-md-2 profileDivFoother profileLefttLine">
+      <p class="profileText5">ROL EN LA EMPRESA</p>
+      <p class="profileText6">Rol en la empresa</p>
+    </div>
+    <br><br><br>
+  </div>
+</div>

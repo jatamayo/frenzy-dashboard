@@ -1,39 +1,52 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3"></div>
-    <!--  center center with main div  -->
+    <!--  col center with main div  -->
     <div class="col-md-6">
       <!--  mainDiv -->
       <div class="mainDiv">
         <!--  div color blue with logo frenzy-->
         <div class="content1">
-          <center>
-            <img src="img/logo2.png" alt="" class="logo" />
-          </center>
+          <div class="signinTitleDiv">
+            <center>
+              <p class="signinTitle4">Frenzy Dashboard</p>
+            </center>
+          </div>
+          <br>
+          <a href="#/signin">
+            <div class="signinTitle5Div" style="border-left: solid;border-color:#00DDC1;">
+              <p class="signinTitle5" style="color:white;">Iniciar sesion</p>
+            </div>
+          </a>
+          <a href="#/signup">
+            <div class="signinTitle5Div">
+              <p class="signinTitle5" style="color:silver;">Crear cuenta</p>
+            </div>
+          </a>
         </div>
         <!--  div color white with input data  -->
         <div class="content2">
           <div class="inputDiv">
             <!--  first input  -->
-            <p class="title">Correo Electrónico</p>
-            <input class="inputStyle" type="text" name="name" value="">
-            <br>
-            <br>
+            <br><br>
+            <p class="title" >Correo electrónico</p>
+            <input class="inputStyle" type="email" ng-model="user.username" id = 'email'>
+            <br><br>
             <!--  second input  -->
-            <p class="title">Password</p>
-            <input class="inputStyle" type="text" name="name" value="">
+            <p class="title">Contraseña</p>
+            <input class="inputStyle" type="password"  ng-model="user.password" id = 'password'>
           </div>
           <!--  login and titles div  -->
+          <br>
           <div class="loginDiv">
-            <p class="loginDivTitle1">No tienes una cuenta aún?</p>
-            <p class="loginDivTitle2">Crea una aqui</p>
-            <!--  button div -->
-            <div class="buttonDiv">
-              <!--  button  -->
-              <a href="#/signup/">
-                <button class="buttonStyle" type="button" name="button">INGRESAR</button>
-              </a>
+            <center>
+              <div class="signinEnterButton" ng-click="logIn(user)">
+                <p>Entrar</p>
               </div>
+              <br>
+              <p class="signinTitle2">¿No puede entrar a su cuenta?</p>
+              <a href="#"><p class="signinTitle3">Reiniciar Contraseña</p></a>
+            </center>
           </div>
         </div>
       </div>
